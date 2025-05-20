@@ -8,6 +8,7 @@ require('dotenv').config();
 //SOmething is not working
 
 //Trying the Supabase thing. Let's see if it works or not 
+//I have changed the field from scores to score in the database table
 
 const middlewares = require('./middlewares');
 const api = require('./api');
