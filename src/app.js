@@ -4,6 +4,12 @@ const helmet = require('helmet');
 const cors = require('cors');
 
 require('dotenv').config();
+// This is just for the Testing Purpose
+//SOmething is not working
+
+//Trying the Supabase thing. Let's see if it works or not 
+//I have changed the field from scores to score in the database table
+//Successfully Inserted into the Database
 
 const middlewares = require('./middlewares');
 const api = require('./api');
