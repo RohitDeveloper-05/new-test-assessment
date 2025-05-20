@@ -10,6 +10,7 @@ require('dotenv').config();
 //Trying the Supabase thing. Let's see if it works or not 
 //I have changed the field from scores to score in the database table
 //Successfully Inserted into the Database
+//Sorting the issues of Pull Request.
 
 const middlewares = require('./middlewares');
 const api = require('./api');
