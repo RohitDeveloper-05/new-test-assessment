@@ -11,6 +11,7 @@ require('dotenv').config();
 //I have changed the field from scores to score in the database table
 //Successfully Inserted into the Database
 //Sorting the issues of Pull Request.
+//Shifted from Personal supabase account to company supabase Account
 
 const middlewares = require('./middlewares');
 const api = require('./api');
