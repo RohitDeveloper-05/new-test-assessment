@@ -38,9 +38,11 @@ jobs:
       - name: Update Supabase
         run: |
           payload=$(echo '{}' | jq --arg score "${{ steps.parse_results.outputs.score }}" '.score = $score')
-          curl -X POST "https://xuzpvjqeospaevrhekkg.supabase.co/rest/v1/assessment_applications" \
+          curl -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/assessment_applications" \
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
             -H "Prefer: return=representation" \
             -d "$payload"
+
+            
