@@ -7,7 +7,7 @@ require('dotenv').config();
 // This is just for the Testing Purpose
 //SOmething is not working
 
-//This shdfsdfj
+//Trying the Supabase thing. Let's see if it works or not 
 
 const middlewares = require('./middlewares');
 const api = require('./api');
